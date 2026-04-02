@@ -1,0 +1,46 @@
+#WordPress Core
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/index.php
+/license.txt
+/readme.html
+/wp-content/index.php
+.htaccess
+
+
+#Languages
+/wp-content/languages/
+
+#Config Files
+/wp-config.php
+.env
+
+#Uploads
+/wp-content/uploads
+
+#Cache / Logs
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backups/
+/wp-content/debug.log
+
+#Node
+node_modules/
+dist/
+build/
+
+#OS Junk
+.DS_Store
+Thumbs.db
+
+#Composer
+/vendor/
+
+#All plugins except custom
+/wp-content/plugins/*
+
+#All themes except custom 
+/wp-content/themes/*
+!/wp-content/themes/bondecom/
