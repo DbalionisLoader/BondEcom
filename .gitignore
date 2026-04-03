@@ -40,6 +40,7 @@ Thumbs.db
 
 #All plugins except custom
 /wp-content/plugins/*
+!/wp-content/plugins/bondit-site-blocks/
 
 #All themes except custom 
 /wp-content/themes/*

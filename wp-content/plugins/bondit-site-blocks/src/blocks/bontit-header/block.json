@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/bontit-header",
+	"version": "0.1.0",
+	"title": "Bontit Header",
+	"category": "widgets",
+	"icon": "layout",
+	"description": "Header Navigation block the store",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "bontit-header",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
