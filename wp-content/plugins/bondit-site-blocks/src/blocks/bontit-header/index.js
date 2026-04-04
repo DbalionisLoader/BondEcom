@@ -4,7 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 import { registerBlockType } from '@wordpress/blocks';
-
+import { addFilter } from '@wordpress/hooks';
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * All files containing `style` keyword are bundled together. The code used
@@ -37,3 +37,24 @@ registerBlockType( metadata.name, {
 	 */
 	save,
 } );
+
+/** 
+ * Register the custom block to be available to navigation block
+ * 
+*/
+
+const addToNavigation = (blockSettings, blockName ) => {
+	if (blockName === 'core/navigation') {
+		return {
+			...blockSettings,
+			allowedBlocks: [
+				...( blockSettings.allowedBlocks ?? []),
+				'create-block/bontit-header'
+			],
+		};
+	}
+ 
+return blockSettings;
+};
+
+addFilter('blocks.registerBlockType','add-mega-menu-block-to-navigation',addToNavigation);

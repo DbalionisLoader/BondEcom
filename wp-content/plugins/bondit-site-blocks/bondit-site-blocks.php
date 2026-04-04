@@ -44,3 +44,23 @@ function create_block_bondit_site_blocks_block_init() {
 	wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 }
 add_action( 'init', 'create_block_bondit_site_blocks_block_init' );
+
+
+/**
+ * Register Custom Template Parts
+ * 
+ * 
+ */
+function outermost_mega_menu_template(array $areas){
+	$areas[] = array(
+		'area'        => 'menu',
+		'area_tag'    => 'div',
+		'description' => __( 'Menu templates are used to create sections of a mega menu.', 'mega-menu-block' ),
+		'icon'        => '',
+		'label'       => __( 'Menu', 'mega-menu-block' ),
+	);
+
+	return $areas;
+}
+
+add_filter('default_wp_template_part_areas','outermost_mega_menu_template');
