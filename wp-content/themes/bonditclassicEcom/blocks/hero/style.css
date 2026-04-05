@@ -1,0 +1,96 @@
+
+:root{
+  --overlay-image: --overlay-image: url(//bonditgroup.com/cdn/shop/t/16/assets/hero-overlay.png?v=48004733217378202211773762879);
+}
+
+
+.hero {
+  --padding-top: 160px;
+  --padding-bottom: 100px;
+  
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  height: 800px;
+  /* padding-top: var(--padding-top);
+  padding-bottom: calc(var(--padding-bottom) + 32px); */
+  margin-top: 0 !important;
+  overflow: hidden;
+}
+
+
+.hero_inner_version{
+  display: block;
+  
+}
+
+.hero_background{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero_background video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+
+.hero_overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(https://bonditgroup.com/cdn/shop/t/16/assets/hero-overlay.png?v=48004733217378202211773762879;);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #162e5033;
+}
+
+.hero_overlay::before {
+  content: "";
+  background: linear-gradient(160deg,#fff 0%,transparent 45%);
+
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  opacity: .7;
+
+}
+
+
+.hero_container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 700px;
+  align-self: center;
+  gap: 2rem;
+}
+
+.hero_title {
+  margin: 0;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 88px;
+  color: var(--color-white);
+}
