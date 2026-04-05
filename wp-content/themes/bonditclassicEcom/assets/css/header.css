@@ -1,0 +1,98 @@
+
+:root{
+  --container: 1240px;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+.site-header{
+  width: 100%;
+  position: relative;
+  /*top: 0;
+  right: 0;
+  left: 0; */
+  z-index: 3;
+  padding: 24px 0;
+}
+
+.container{
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header_hamburger{
+  display: none;
+}
+
+.header_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+.site-header a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.header_right {
+  flex: 1 0 auto;
+}
+
+.header_top {
+  padding: 0 var(--gap);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.header_main{
+  padding: 24px var(--gap) 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.header_menu{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.header_icons{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+
+  .a{
+    color: var(--color-black);
+  }
+}
+
+header .header_icons svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header_search-btn{
+background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

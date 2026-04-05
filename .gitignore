@@ -40,8 +40,10 @@ Thumbs.db
 
 #All plugins except custom
 /wp-content/plugins/*
-!/wp-content/plugins/bondit-site-blocks/
+/wp-content/plugins/bondit-site-blocks/
 
 #All themes except custom 
 /wp-content/themes/*
-!/wp-content/themes/bondecom/
+/wp-content/themes/bondecom/
+!/wp-content/themes/bonditclassicEcom/
+!/wp-content/themes/bonditclassicEcom/**
