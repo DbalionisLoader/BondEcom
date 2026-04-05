@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev:css": "postcss assets/css/header.css -o assets/css/dist/main_style.css --watch",
+    "build:css": "NODE_ENV=production postcss assets/css/header.css -o assets/css/dist/main_style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

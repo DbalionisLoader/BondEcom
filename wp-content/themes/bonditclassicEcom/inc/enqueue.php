@@ -4,10 +4,10 @@
 function bonditecom_style()
 {
 
-	$path = get_template_directory() . '/assets/css/header.css';
+	$path = get_template_directory() . '/assets/css/dist/main_style.css';
 	wp_enqueue_style(
 		'header.css',
-		get_template_directory_uri() . '/assets/css/header.css',
+		get_template_directory_uri() . '/assets/css/dist/main_style.css',
 		[],
 		file_exists($path) ? filemtime($path) : null
 	);
