@@ -27,10 +27,10 @@
 /wp-content/debug.log
 
 #Node
+/node_modules
 node_modules/
 dist/
 build/
-
 #OS Junk
 .DS_Store
 Thumbs.db
@@ -42,8 +42,10 @@ Thumbs.db
 /wp-content/plugins/*
 /wp-content/plugins/bondit-site-blocks/
 
-#All themes except custom 
+#All themes except custom themes
+#Also ignore theme level node_modules
 /wp-content/themes/*
 /wp-content/themes/bondecom/
 !/wp-content/themes/bonditclassicEcom/
 !/wp-content/themes/bonditclassicEcom/**
+/wp-content/themes/bonditclassicEcom/node_modules/
