@@ -1,0 +1,13 @@
+
+@import "./typography.css";
+@import "./header.css";
+@import "./buttons.css";
+
+:root{
+  --container: 1240px;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #017cb8;
+  --gap: 24px;
+}
+

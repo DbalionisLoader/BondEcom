@@ -39,12 +39,12 @@
 				<div class="header_right">
 					<div class="header_top">
 						<div class="audience_switcher">
-							<!--  <button class="audience-switcher_option" type="button" data-audience="trade" aria-pressed="false">Trade</button> -->
+							<button class="audience-switcher_option" type="button" data-audience="trade" aria-pressed="false">Trade</button>
 							<button class="audience-switcher_option" type="button" data-audience="consumer" aria-pressed="true">Consumer</button>
 						</div>
 						<div class="header_stocklist-btn" data-audience="consumer">
 							<a href="" class="btn btn-primary" href="/">
-								<span class="btn__text">Find a stockist</span>
+								<span class="btn_text">Find a stockist</span>
 							</a>
 						</div>
 						<!--	<div class="header_login-btn" data-audience="trade">

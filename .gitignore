@@ -41,6 +41,7 @@ Thumbs.db
 #All plugins except custom
 /wp-content/plugins/*
 /wp-content/plugins/bondit-site-blocks/
+!/wp-content/plugins/my-custom-acf-blocks/
 
 #All themes except custom themes
 #Also ignore theme level node_modules

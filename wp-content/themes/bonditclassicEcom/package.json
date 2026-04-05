@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev:css": "postcss assets/css/header.css -o assets/css/dist/main_style.css --watch",
-    "build:css": "NODE_ENV=production postcss assets/css/header.css -o assets/css/dist/main_style.css",
+    "dev:css": "postcss assets/css/main.css -o assets/css/dist/main_style.css --watch",
+    "build:css": "NODE_ENV=production postcss assets/css/main.css -o assets/css/dist/main_style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "autoprefixer": "^10.4.27",
     "cssnano": "^7.1.4",
     "postcss": "^8.5.8",
-    "postcss-cli": "^11.0.1"
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1"
   }
 }
